@@ -9,11 +9,7 @@ import { classNames } from "./helpers/classNames/classNames";
 export const App = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div
-      className={classNames("app", {  }, [
-        themegit 
-      ])}
-    >
+    <div className={classNames("app", {}, [theme])}>
       <button onClick={toggleTheme}>Toogle</button>
       <Link to={"/"}>Главня</Link>
       <Link to={"/about"}>О сайте</Link>
